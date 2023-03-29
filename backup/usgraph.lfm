@@ -1,0 +1,221 @@
+object Form1: TForm1
+  Left = 314
+  Height = 641
+  Top = 119
+  Width = 854
+  Caption = 'Graphics'
+  ClientHeight = 641
+  ClientWidth = 854
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 641
+    Top = 0
+    Width = 194
+    Align = alLeft
+    ClientHeight = 641
+    ClientWidth = 194
+    TabOrder = 0
+    object Button1: TButton
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Clear Space'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 8
+      Height = 25
+      Top = 40
+      Width = 75
+      Caption = 'Line'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 320
+      Width = 12
+      Caption = 'x1'
+      ParentColor = False
+    end
+    object edX1: TEdit
+      Left = 8
+      Height = 23
+      Top = 340
+      Width = 136
+      TabOrder = 2
+      Text = '100'
+    end
+    object edY1: TEdit
+      Left = 8
+      Height = 23
+      Top = 396
+      Width = 136
+      TabOrder = 3
+      Text = '50'
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 376
+      Width = 12
+      Caption = 'y1'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 432
+      Width = 12
+      Caption = 'x2'
+      ParentColor = False
+    end
+    object edX2: TEdit
+      Left = 8
+      Height = 23
+      Top = 452
+      Width = 136
+      TabOrder = 4
+      Text = '500'
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 15
+      Top = 488
+      Width = 12
+      Caption = 'y2'
+      ParentColor = False
+    end
+    object edY2: TEdit
+      Left = 8
+      Height = 23
+      Top = 508
+      Width = 136
+      TabOrder = 5
+      Text = '250'
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 15
+      Top = 544
+      Width = 4
+      Caption = 'r'
+      ParentColor = False
+    end
+    object edR: TEdit
+      Left = 8
+      Height = 23
+      Top = 564
+      Width = 136
+      TabOrder = 6
+      Text = '100'
+    end
+    object Button3: TButton
+      Left = 8
+      Height = 25
+      Top = 72
+      Width = 75
+      Caption = 'Rectangle'
+      OnClick = Button3Click
+      TabOrder = 7
+    end
+    object Button4: TButton
+      Left = 8
+      Height = 25
+      Top = 104
+      Width = 75
+      Caption = 'Ellipse'
+      OnClick = Button4Click
+      TabOrder = 8
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 15
+      Top = 152
+      Width = 57
+      Caption = 'Line Width'
+      ParentColor = False
+    end
+    object edLineWidth: TEdit
+      Left = 8
+      Height = 23
+      Top = 168
+      Width = 136
+      TabOrder = 9
+      Text = '1'
+    end
+    object ComboBox1: TComboBox
+      Left = 8
+      Height = 23
+      Top = 200
+      Width = 140
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Solid'
+        'Cross'
+        'Clear'
+      )
+      Style = csDropDownList
+      TabOrder = 10
+      Text = 'Solid'
+    end
+    object Button5: TButton
+      Left = 8
+      Height = 25
+      Top = 232
+      Width = 75
+      Caption = 'Pen Colour'
+      OnClick = Button5Click
+      TabOrder = 11
+    end
+    object Button6: TButton
+      Left = 88
+      Height = 25
+      Top = 232
+      Width = 75
+      Caption = 'Brush Colour'
+      OnClick = Button6Click
+      TabOrder = 12
+    end
+  end
+  object PaintBox1: TPaintBox
+    Left = 194
+    Height = 641
+    Top = 0
+    Width = 660
+    Align = alClient
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 144
+    Top = 8
+  end
+end
